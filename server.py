@@ -236,6 +236,7 @@ def run(routes, host='0.0.0.0', port=8080):
     while True:
         from time import sleep
         sleep(1)
+    #print("Hello")
     server.shutdown()
     server.start()
     server.waitForThread()
@@ -244,7 +245,6 @@ def run(routes, host='0.0.0.0', port=8080):
 ################################################################################
 #
 # App
-
 ops = {
     'buy': operator.le,
     'sell': operator.ge,
